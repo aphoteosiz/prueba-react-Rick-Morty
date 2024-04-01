@@ -1,0 +1,88 @@
+
+.Hader{
+    width: 100%;
+    background-color: aqua;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+
+.Hader-h1{
+    background-color:aqua;
+    
+}
+.Hader-a{
+
+}
+
+.Hader-button{
+    background-color: wheat;
+    display: none;
+    cursor:pointer;
+}
+.Hader-svg{
+width: 2em;
+height: 2em;
+}
+
+.Hader-nav{
+    background-color: bisque;
+}
+.Hader-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Hader-li{
+    margin: 0 .5em;
+    float: none;
+    text-align: right;
+    margin-right: 1px;
+}
+.logo{
+    width: 60px; 
+    height: 60px; 
+    border-radius: 100px;
+    float: right;
+    
+     -moz-border-radius: 150px;
+}
+@media screen and (max-width:600px) {
+    .Hader-button{
+        display: flex;
+    }
+    .Hader-nav{
+        order: 2;
+        width: 100%;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 0vh;
+        overflow: hidden;
+        opacity: 0;
+        transition: all .5 ease;
+    }
+    .Hader-nav.isActive{
+        height: 40vh;
+        opacity: 1;
+    }
+   
+    .Hader-ul{
+        flex-direction: column;
+    }
+    .Hader-li{
+        margin: 05 em 0 ;
+        }
+        .Hader-h1 {
+            order: 1;
+            float: none;
+            text-align: right;
+            margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+         }
+}
